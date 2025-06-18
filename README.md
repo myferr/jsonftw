@@ -23,7 +23,8 @@ To use jsonftw in a project:
 
 ```
 
-npm install jsonftw
+npm install jsonftw     # Install
+npx jsonftw@latest      # Scaffold new project using JSONFTW
 
 ```
 
@@ -34,21 +35,21 @@ npm install jsonftw
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>jsonftw App</title>
-</head>
-<body>
-  <div id="app"></div>
-  <script type="module" src="./main.js"></script>
-</body>
+  <head>
+    <title>jsonftw App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
-````
+```
 
 ### 2. Import and start the framework
 
 ```js
 // main.js
-import { startJsonFTW } from 'jsonftw';
+import { startJsonFTW } from "jsonftw";
 startJsonFTW();
 ```
 
@@ -91,8 +92,7 @@ startJsonFTW();
 ### 4. Enable routing with hash links
 
 ```html
-<a href="#/">Home</a>
-<a href="#/about">About</a>
+<a href="#/">Home</a> <a href="#/about">About</a>
 ```
 
 ---
@@ -105,7 +105,7 @@ Each route is a `.json` file with the following structure:
 | ------------ | -------- | -------- | ------------------------------------------------ |
 | `cssFile`    | `string` | optional | Path to an external stylesheet to load           |
 | `renderOn`   | `string` | optional | DOM `id` to render into (default: `app`)         |
-| `view`       | `array`  | ✅        | A list of DOM element definitions                |
+| `view`       | `array`  | ✅       | A list of DOM element definitions                |
 | `javascript` | `string` | optional | Page-level inline JavaScript to run after render |
 
 ---
@@ -114,8 +114,8 @@ Each route is a `.json` file with the following structure:
 
 | Field         | Type     | Required | Description                                                                  |
 | ------------- | -------- | -------- | ---------------------------------------------------------------------------- |
-| `type`        | `string` | ✅        | HTML element tag (e.g., `div`, `h1`, `input`)                                |
-| `identifier`  | `string` | ✅        | Unique key used internally for nesting                                       |
+| `type`        | `string` | ✅       | HTML element tag (e.g., `div`, `h1`, `input`)                                |
+| `identifier`  | `string` | ✅       | Unique key used internally for nesting                                       |
 | `class`       | `string` | optional | `class` attribute                                                            |
 | `id`          | `string` | optional | `id` attribute                                                               |
 | `style`       | `string` | optional | Inline style (e.g., `"color: red;"`)                                         |
@@ -168,15 +168,15 @@ Uses `window.location.hash` to route to `routes/<page>.json`.
 
 Examples:
 
-* `#/` → `routes/home.json`
-* `#/about` → `routes/about.json`
+- `#/` → `routes/home.json`
+- `#/about` → `routes/about.json`
 
 ### ✅ JavaScript execution
 
 You can include a string of JS in:
 
-* `onClick`
-* `javascript` (top-level)
+- `onClick`
+- `javascript` (top-level)
 
 It will be evaluated using `new Function(...)`.
 
