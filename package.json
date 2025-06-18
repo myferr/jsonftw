@@ -1,6 +1,6 @@
 {
   "name": "jsonftw",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A minimal JSON-first web UI framework.",
   "main": "./index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     ".": "./index.js"
   },
   "bin": {
-    "create-jsonftw-app": "./create/bin.js"
+    "make-jsonftw-app": "./create/bin.js"
   },
   "keywords": [
     "json",
