@@ -1,0 +1,14 @@
+{
+  "name": "jsonftw-app",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "jsonftw": "latest"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

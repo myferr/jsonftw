@@ -1,0 +1,19 @@
+{
+  "renderOn": "app",
+  "view": [
+    {
+      "type": "div",
+      "identifier": "main",
+      "class": "p-6"
+    },
+    {
+      "type": "h1",
+      "identifier": "title",
+      "innerText": "Welcome to jsonftw!",
+      "insideOf": {
+        "childElement": true,
+        "parentElement": "main"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+name = "jsonftw-app"
+compatibility_date = "2025-01-01"
+
+[site]
+bucket = "./"
+entry-point = "."
+
+[build]
+command = "echo 'No build required'"
