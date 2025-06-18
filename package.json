@@ -1,0 +1,20 @@
+{
+  "name": "jsonftw",
+  "version": "1.0.0",
+  "description": "A minimal JSON-first web UI framework.",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "keywords": [
+    "json",
+    "frontend",
+    "ui",
+    "framework",
+    "html",
+    "no-jsx"
+  ],
+  "author": "myfer <https://github.com/myferr/>",
+  "license": "MIT"
+}
