@@ -1,6 +1,6 @@
 {
   "name": "jsonftw",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimal JSON-first web UI framework.",
   "main": "./index.js",
   "type": "module",
