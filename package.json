@@ -8,7 +8,7 @@
     ".": "./index.js"
   },
   "bin": {
-    "make-jsonftw-app": "./create/bin.js"
+    "jsonftw": "./create/bin.js"
   },
   "keywords": [
     "json",
