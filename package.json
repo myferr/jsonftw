@@ -2,10 +2,10 @@
   "name": "jsonftw",
   "version": "0.0.1",
   "description": "A minimal JSON-first web UI framework.",
-  "main": "src/index.js",
+  "main": "./index.js",
   "type": "module",
   "exports": {
-    ".": "./src/index.js"
+    ".": "./index.js"
   },
   "keywords": [
     "json",
